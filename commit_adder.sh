@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for ((i=1; i<=5; i++))
+for ((i=1; i<=2; i++))
 do
     echo "Performing iteration $i"
     
@@ -14,4 +14,9 @@ do
     sleep 5
 done
 
-echo "Finished 5 iterations"
+  rm newfile_$i.txt
+  git add .
+  git commit -m "commit no $i"
+  git push
+
+echo "Finished !!\n"
