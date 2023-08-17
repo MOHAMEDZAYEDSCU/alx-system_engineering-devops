@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for ((i=1; i<=2; i++))
+for ((i=1; i<=99; i++))
 do
     echo "Performing iteration $i"
     
@@ -19,4 +19,4 @@ done
   git commit -m "commit no $i"
   git push
 
-echo "Finished !!\n"
+echo "Finished !!"
