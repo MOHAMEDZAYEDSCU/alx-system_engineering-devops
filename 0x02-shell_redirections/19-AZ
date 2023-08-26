@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# Read input from stdin
-input=$(cat)
-
-# Use sed to replace characters
-output=$(echo "$input" | sed 's/A/Z/g; s/c/e/g')
-
-# Print the modified output
-echo "$output"
+sed 's/A/Z/g; s/c/e/g'
