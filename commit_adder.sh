@@ -14,7 +14,8 @@ do
 
     rm newfile_$i.txt
 
-    sleep 1  
+    sleep 15
+
 done
 
   git add .
