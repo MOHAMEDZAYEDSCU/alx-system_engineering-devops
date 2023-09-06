@@ -1,6 +1,8 @@
 #!/bin/bash
 
-for ((i=1; i<=60; i++))
+read -p "Enter No. of commits: " commit_number
+
+for ((i = 1 ; i < $commit_number ; i++))
 do
     echo "Performing iteration No. $i"
     
@@ -15,7 +17,6 @@ do
     sleep 1  
 done
 
-  rm newfile_$i.txt
   git add .
   git commit -m "$i"
   git push
